@@ -99,8 +99,8 @@ export default function DocumentUpload() {
                 },
             });
 
-            // Navigate to dashboard after successful upload
-            window.location.href = '/dashboard';
+            // Upload successful - the wizard will handle navigation
+            setError(null);
         } catch (err) {
             setError('Upload failed. Please try again.');
             console.error('Upload error:', err);
